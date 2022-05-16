@@ -1,0 +1,323 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/#> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 31 ###
+#  --------------------------- Property 0------------------------- 
+:characterIn rdf:type owl:ObjectProperty ;
+             rdfs:label "isCharacterIn"@en; 
+             rdfs:domain :Characterts;
+             rdfs:range :Game . 
+#  --------------------------- Property 1------------------------- 
+:hasDownloadableContent rdf:type owl:DatatypeProperty ;
+                        rdfs:label "hasDownloadableContent"@en; 
+                        rdfs:domain :Video_Game;
+                        rdfs:range xsd:boolean . 
+#  --------------------------- Property 2------------------------- 
+:Platform rdf:type owl:DatatypeProperty ;
+          rdfs:label "isOnPlatform"@en; 
+          rdfs:domain :Video_Game;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 3------------------------- 
+:developedBy rdf:type owl:DatatypeProperty ;
+             rdfs:label "developedBy"@en; 
+             rdfs:domain :Video_Game;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 4------------------------- 
+:isOfGenre rdf:type owl:ObjectProperty ;
+           rdfs:label "isOfGenre"@en; 
+           rdfs:domain :Genre;
+           rdfs:range :Game . 
+#  --------------------------- Property 5------------------------- 
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:label "hasRating"@en; 
+           rdfs:domain :Video_Game;
+           rdfs:range xsd:integer . 
+#  --------------------------- Property 6------------------------- 
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:label "hasName"@en; 
+         rdfs:domain :Video_Game;
+         rdfs:range xsd:string . 
+#  --------------------------- Property 7------------------------- 
+:yearOfRelease rdf:type owl:DatatypeProperty ;
+               rdfs:label "yearOfRelease"@en; 
+               rdfs:domain :Video_Game;
+               rdfs:range xsd:integer . 
+#  --------------------------- Property 8------------------------- 
+:isMotivatedBy rdf:type owl:DatatypeProperty ;
+               rdfs:label "isMotivatedBy"@en; 
+               rdfs:domain :Characterts;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+:livesIn rdf:type owl:DatatypeProperty ;
+         rdfs:label "livesIn"@en; 
+         rdfs:domain :Characterts;
+         rdfs:range xsd:string . 
+#  --------------------------- Property 10------------------------- 
+:hasATalentFor rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasATalentFor"@en; 
+               rdfs:domain :Characterts;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 11------------------------- 
+:canLevelUp rdf:type owl:DatatypeProperty ;
+            rdfs:label "canLevelUp"@en; 
+            rdfs:domain :Characterts;
+            rdfs:range xsd:boolean . 
+#  --------------------------- Property 12------------------------- 
+:datatypeProperty61 rdf:type owl:DatatypeProperty ;
+                    rdfs:label "newDatatypeProperty"@en; 
+                    rdfs:domain :Characterts;
+                    rdfs:range xsd:string . 
+#  --------------------------- Property 13------------------------- 
+:isTimePeriodIn rdf:type owl:DatatypeProperty ;
+                rdfs:label "isTimePeriodIn"@en; 
+                rdfs:domain :Setting;
+                rdfs:range xsd:string . 
+#  --------------------------- Property 14------------------------- 
+:IsTheSettingOf rdf:type owl:DatatypeProperty ;
+                rdfs:label "IsTheSettingOf"@en; 
+                rdfs:domain :Setting;
+                rdfs:range xsd:string . 
+#  --------------------------- Property 15------------------------- 
+:isTheSettingOf rdf:type owl:ObjectProperty ;
+                rdfs:label "isTheSettingOf"@en; 
+                rdfs:domain :Setting;
+                rdfs:range :Game . 
+#  --------------------------- Property 16------------------------- 
+:nameOfGenre rdf:type owl:DatatypeProperty ;
+             rdfs:label "amountOfGamesInGenre"@en; 
+             rdfs:domain :Genre;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 17------------------------- 
+:nameOfGenre rdf:type owl:DatatypeProperty ;
+             rdfs:label "nameOfGenre"@en; 
+             rdfs:domain :Genre;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 18------------------------- 
+:Drives rdf:type owl:DatatypeProperty ;
+        rdfs:label "Drives"@en; 
+        rdfs:domain :Motivations;
+        rdfs:range xsd:string . 
+#  --------------------------- Property 19------------------------- 
+:hasVilliam rdf:type owl:DatatypeProperty ;
+            rdfs:label "hasVilliam"@en; 
+            rdfs:domain :Game;
+            rdfs:range xsd:boolean . 
+#  --------------------------- Property 20------------------------- 
+:canBePlayerOn rdf:type owl:DatatypeProperty ;
+               rdfs:label "canBePlayerOn"@en; 
+               rdfs:domain :Game;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 21------------------------- 
+:isRated rdf:type owl:DatatypeProperty ;
+         rdfs:label "isRated"@en; 
+         rdfs:domain :Game;
+         rdfs:range xsd:boolean . 
+#  --------------------------- Property 22------------------------- 
+:durationHours rdf:type owl:DatatypeProperty ;
+               rdfs:label "durationHours"@en; 
+               rdfs:domain :Game;
+               rdfs:range xsd:double . 
+#  --------------------------- Property 23------------------------- 
+:endWith rdf:type owl:DatatypeProperty ;
+         rdfs:label "endWith"@en; 
+         rdfs:domain :Game;
+         rdfs:range xsd:string . 
+#  --------------------------- Property 24------------------------- 
+:publishedBu rdf:type owl:DatatypeProperty ;
+             rdfs:label "publishedBy"@en; 
+             rdfs:domain :Game;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 25------------------------- 
+:yearOfRelease rdf:type owl:DatatypeProperty ;
+               rdfs:label "yearOfRelease"@en; 
+               rdfs:domain :Game;
+               rdfs:range xsd:integer . 
+#  --------------------------- Property 26------------------------- 
+:initialPrice rdf:type owl:DatatypeProperty ;
+              rdfs:label "initialPrice"@en; 
+              rdfs:domain :Game;
+              rdfs:range xsd:integer . 
+#  --------------------------- Property 27------------------------- 
+:hasPopCultureReferences rdf:type owl:DatatypeProperty ;
+                         rdfs:label "hasPopCultureReferences"@en; 
+                         rdfs:domain :Game;
+                         rdfs:range xsd:string . 
+#  --------------------------- Property 28------------------------- 
+:isAllyOf rdf:type owl:DatatypeProperty ;
+          rdfs:label "isAllyOf"@en; 
+          rdfs:domain :Characterts;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 29------------------------- 
+:isCustomisable rdf:type owl:DatatypeProperty ;
+                rdfs:label "isCustomizable"@en; 
+                rdfs:domain :Characterts;
+                rdfs:range xsd:boolean . 
+#  --------------------------- Property 30------------------------- 
+:hasOnlineGameplay rdf:type owl:DatatypeProperty ;
+                   rdfs:label "hasOnlineGameplay"@en; 
+                   rdfs:domain :Video_Game;
+                   rdfs:range xsd:boolean . 
+###  Class Definitions (Number of Classes) 38 ###
+#  --------------------------- Class  0------------------------- 
+:Game rdf:type owl:DeprecatedClass, owl:DeprecatedProperty; 
+      rdfs:label "Game"@en . 
+#  --------------------------- Class  1------------------------- 
+:Characterts rdf:type owl:Class; 
+             rdfs:label "Character"@en . 
+#  --------------------------- Class  2------------------------- 
+:Video_Game rdf:type owl:Class; 
+            rdfs:subClassOf :Game ;
+            rdfs:label "Video Game"@en . 
+#  --------------------------- Class  3------------------------- 
+:Genre rdf:type owl:Class; 
+       rdfs:label "Genre"@en . 
+#  --------------------------- Class  4------------------------- 
+:Action rdf:type owl:Class; 
+        rdfs:subClassOf :Genre ;
+        rdfs:label "Action"@en . 
+#  --------------------------- Class  5------------------------- 
+:Puzzle rdf:type owl:Class; 
+        rdfs:subClassOf :Genre ;
+        rdfs:label "Puzzle"@en . 
+#  --------------------------- Class  6------------------------- 
+:Board rdf:type owl:Class; 
+       rdfs:subClassOf :Idle ;
+       rdfs:label "Board"@en . 
+#  --------------------------- Class  7------------------------- 
+:Idle rdf:type owl:Class; 
+      rdfs:subClassOf :Genre ;
+      rdfs:label "Idle"@en . 
+#  --------------------------- Class  8------------------------- 
+:Simulation rdf:type owl:Class; 
+            rdfs:subClassOf :Genre ;
+            rdfs:label "Simulator"@en . 
+#  --------------------------- Class  9------------------------- 
+:Strategy rdf:type owl:Class; 
+          rdfs:subClassOf :Genre ;
+          rdfs:label "Strategy"@en . 
+#  --------------------------- Class  10------------------------- 
+:Role-playing rdf:type owl:Class; 
+              rdfs:subClassOf :Genre ;
+              rdfs:label "Role-playing"@en . 
+#  --------------------------- Class  11------------------------- 
+:Sports rdf:type owl:Class; 
+        rdfs:subClassOf :Genre ;
+        rdfs:label "Sports"@en . 
+#  --------------------------- Class  12------------------------- 
+:Action-adventure rdf:type owl:Class; 
+                  rdfs:subClassOf :Genre ;
+                  rdfs:label "Action-adventure"@en . 
+#  --------------------------- Class  13------------------------- 
+:Casual rdf:type owl:Class; 
+        rdfs:subClassOf :Idle ;
+        rdfs:label "Casual"@en . 
+#  --------------------------- Class  14------------------------- 
+:Farming rdf:type owl:Class; 
+         rdfs:subClassOf :Simulation ;
+         rdfs:label "Farming"@en . 
+#  --------------------------- Class  15------------------------- 
+:Construction rdf:type owl:Class; 
+              rdfs:subClassOf :Simulation ;
+              rdfs:label "Construction"@en . 
+#  --------------------------- Class  16------------------------- 
+:Life rdf:type owl:Class; 
+      rdfs:subClassOf :Simulation ;
+      rdfs:label "Life"@en . 
+#  --------------------------- Class  17------------------------- 
+:Fighter rdf:type owl:Class; 
+         rdfs:subClassOf :Sports ;
+         rdfs:label "Combat"@en . 
+#  --------------------------- Class  18------------------------- 
+:Racing rdf:type owl:Class; 
+        rdfs:subClassOf :Sports ;
+        rdfs:label "Racing"@en . 
+#  --------------------------- Class  19------------------------- 
+:Soccer rdf:type owl:Class; 
+        rdfs:subClassOf :Sports ;
+        rdfs:label "Soccer"@en . 
+#  --------------------------- Class  20------------------------- 
+:War rdf:type owl:Class; 
+     rdfs:subClassOf :Strategy ;
+     rdfs:label "War"@en . 
+#  --------------------------- Class  21------------------------- 
+:Shooter rdf:type owl:Class; 
+         rdfs:subClassOf :Action ;
+         rdfs:label "Shooter"@en . 
+#  --------------------------- Class  22------------------------- 
+:Third_Person_Shooter rdf:type owl:Class; 
+                      rdfs:subClassOf :Shooter ;
+                      rdfs:label "Third Person Shooter"@en . 
+#  --------------------------- Class  23------------------------- 
+:First_Person_Shooter rdf:type owl:Class; 
+                      rdfs:subClassOf :Shooter ;
+                      rdfs:label "First Person Shooter"@en . 
+#  --------------------------- Class  24------------------------- 
+:Real-time_Strategy rdf:type owl:Class; 
+                    rdfs:subClassOf :Strategy ;
+                    rdfs:label "Real-time Strategy"@en . 
+#  --------------------------- Class  25------------------------- 
+:Logic rdf:type owl:Class; 
+       rdfs:subClassOf :Puzzle ;
+       rdfs:label "Logic"@en . 
+#  --------------------------- Class  26------------------------- 
+:Trivia rdf:type owl:Class; 
+        rdfs:subClassOf :Puzzle ;
+        rdfs:label "Trivia"@en . 
+#  --------------------------- Class  27------------------------- 
+:Stealth rdf:type owl:Class; 
+         rdfs:subClassOf :Action ;
+         rdfs:label "Stealth"@en . 
+#  --------------------------- Class  28------------------------- 
+:RPG rdf:type owl:Class; 
+     rdfs:subClassOf :Action-adventure ;
+     rdfs:label "RPG"@en . 
+#  --------------------------- Class  29------------------------- 
+:MMORPG rdf:type owl:Class; 
+        rdfs:subClassOf :Action-adventure ;
+        rdfs:label "MMORPG"@en . 
+#  --------------------------- Class  30------------------------- 
+:Survival_Horror rdf:type owl:Class; 
+                 rdfs:subClassOf :Action-adventure ;
+                 rdfs:label "Survival Horror"@en . 
+#  --------------------------- Class  31------------------------- 
+:Text rdf:type owl:Class; 
+      rdfs:subClassOf :Idle ;
+      rdfs:label "Text"@en . 
+#  --------------------------- Class  32------------------------- 
+:Interactive_Mode rdf:type owl:Class; 
+                  rdfs:subClassOf :Idle ;
+                  rdfs:label "Interactive Movie"@en . 
+#  --------------------------- Class  33------------------------- 
+:Tower_Defense rdf:type owl:Class; 
+               rdfs:subClassOf :Strategy ;
+               rdfs:label "Tower Defense"@en . 
+#  --------------------------- Class  34------------------------- 
+:Vehicle rdf:type owl:Class; 
+         rdfs:subClassOf :Simulation ;
+         rdfs:label "Vehicle"@en . 
+#  --------------------------- Class  35------------------------- 
+:Setting rdf:type owl:Class; 
+         rdfs:label "Setting"@en . 
+#  --------------------------- Class  36------------------------- 
+:Video_Game_Character rdf:type owl:Class; 
+                      rdfs:subClassOf :Characterts ;
+                      rdfs:label "Video Game Character"@en . 
+#  --------------------------- Class  37------------------------- 
+:Motivations rdf:type owl:Class; 
+             rdfs:subClassOf :Characterts ;
+             rdfs:label "Motivations"@en . 
