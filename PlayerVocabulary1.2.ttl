@@ -1,0 +1,100 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/PlayerVocabulary> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix wd: 		<http://www.wikidata.org/entity/> .
+@prefix c9s: 		<http://cloudnine.sw/schema#> .
+@prefix c9e: 		<http://cloudnine.sw/entity/> .
+@prefix c9pv: 		<http://visualdataweb.org/PlayerVocabulary> .
+@base 			<http://visualdataweb.org/PlayerVocabulary> .
+
+<http://visualdataweb.org/PlayerVocabulary> rdf:type owl:Ontology ;
+                                            dc:title "PlayerVocabulary"@en;
+                                            dc:description "This is a vocabulary describing a player and their game preferences
+"@en;
+                                            owl:versionInfo "1.2"@en;
+                                            dc:creator "Colm Rooney, Jorge Vasquez" . 
+#################################################################
+
+###  Property Definitions (Number of Property) 10 ###
+#  --------------------------- Property 0------------------------- 
+c9s:hasPlayed rdf:type owl:ObjectProperty ;
+              rdfs:label "hasPlayed"@en; 
+              rdfs:range c9e:Play_History . 
+#  --------------------------- Property 1------------------------- 
+c9s:hasLanguage rdf:type owl:ObjectProperty ;
+                rdfs:label "hasLanguage"@en; 
+                rdfs:range c9e:Language . 
+#  --------------------------- Property 2------------------------- 
+c9s:likedGames rdf:type owl:ObjectProperty ;
+               rdfs:label "likedGames"@en; 
+               rdfs:range c9e:Favorite_Games . 
+#  --------------------------- Property 3------------------------- 
+c9s:hasName rdf:type owl:ObjectProperty ;
+            rdfs:label "hasName"@en; 
+            rdfs:range c9e:Name . 
+#  --------------------------- Property 4------------------------- 
+c9s:hasUsername rdf:type owl:ObjectProperty ;
+                rdfs:label "hasUsername"@en; 
+                rdfs:range c9e:Username . 
+#  --------------------------- Property 5------------------------- 
+c9s:hasConsole rdf:type owl:ObjectProperty ;
+               rdfs:label "usesConsole"@en; 
+               rdfs:range c9e:Console . 
+#  --------------------------- Property 6------------------------- 
+c9s:hasGender rdf:type owl:ObjectProperty ;
+              rdfs:label "hasGender"@en; 
+              rdfs:range c9e:Gender . 
+#  --------------------------- Property 7------------------------- 
+c9s:livesIn rdf:type owl:ObjectProperty ;
+            rdfs:label "livesIn"@en; 
+            rdfs:range c9e:Location . 
+#  --------------------------- Property 8------------------------- 
+c9s:hasAge rdf:type owl:ObjectProperty ;
+           rdfs:label "hasAge"@en; 
+           rdfs:range c9e:Age . 
+#  --------------------------- Property 9------------------------- 
+c9s:enjoysMode rdf:type owl:ObjectProperty ;
+               rdfs:label "enjoysMode"@en; 
+               rdfs:range c9e:Play_Modes . 
+###  Class Definitions (Number of Classes) 10 ###
+#  --------------------------- Class  0------------------------- 
+c9e:Language rdf:type owl:Class; 
+             rdfs:label "Language"@IRI-based . 
+#  --------------------------- Class  1------------------------- 
+c9e:Name rdf:type owl:Class; 
+         rdfs:label "Name"@IRI-based . 
+#  --------------------------- Class  2------------------------- 
+c9e:Location rdf:type owl:Class; 
+             rdfs:label "Location"@en . 
+#  --------------------------- Class  3------------------------- 
+c9e:Play_History rdf:type owl:Class; 
+                 rdfs:label "Play History"@en . 
+#  --------------------------- Class  4------------------------- 
+c9e:Username rdf:type owl:Class; 
+             rdfs:label "Username"@IRI-based . 
+#  --------------------------- Class  5------------------------- 
+c9e:Favorite_Games rdf:type owl:Class; 
+                   rdfs:label "Favorite_Games"@en . 
+#  --------------------------- Class  6------------------------- 
+c9e:Gender rdf:type owl:Class; 
+           rdfs:label "Gender"@IRI-based . 
+#  --------------------------- Class  7------------------------- 
+c9e:Age rdf:type owl:Class; 
+        rdfs:label "Age"@IRI-based . 
+#  --------------------------- Class  8------------------------- 
+c9e:Play_Modes rdf:type owl:Class; 
+               rdfs:label "Play Modes"@en . 
+#  --------------------------- Class  9------------------------- 
+c9e:Console rdf:type owl:Class; 
+            rdfs:label "Console"@IRI-based . 
