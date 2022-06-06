@@ -1,0 +1,234 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/VideoGameOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/#> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix c9s: 		<http://cloudnine.sw/schema#> .
+@prefix c9e: 		<http://cloudnine.sw/entity/> .
+@base 			<http://visualdataweb.org/VideoGameOntology/> .
+
+<http://visualdataweb.org/VideoGameOntology/> rdf:type owl:Ontology ;
+                                              dc:title "VideoGameOntology"@en;
+                                              dc:description "This ontology describes the Video Game class and its properties.
+
+"@en;
+                                              owl:versionInfo "1.1"@en;
+                                              dc:creator "Colm Rooney" . 
+#################################################################
+
+###  Property Definitions (Number of Property) 21 ###
+#  --------------------------- Property 0------------------------- 
+c9s:hasRating rdf:type owl:ObjectProperty ;
+              rdfs:label "hasRating"@en; 
+              rdfs:domain c9e:VideoGame;
+              rdfs:range c9e:Rating . 
+#  --------------------------- Property 1------------------------- 
+c9s:onConsole rdf:type owl:ObjectProperty ;
+              rdfs:label "onConsole"@en; 
+              rdfs:domain c9e:VideoGame;
+              rdfs:range c9e:Console . 
+#  --------------------------- Property 2------------------------- 
+c9s:partOfSeries rdf:type owl:ObjectProperty ;
+                 rdfs:label "partOfSeries"@en; 
+                 rdfs:domain c9e:VideoGame;
+                 rdfs:range c9e:Series . 
+#  --------------------------- Property 3------------------------- 
+c9s:seriesIn rdf:type owl:ObjectProperty ;
+             rdfs:label "seriesIncludes"@en; 
+             rdfs:domain c9e:Series;
+             rdfs:range c9e:VideoGame . 
+#  --------------------------- Property 4------------------------- 
+c9s:partOfGenre rdf:type owl:ObjectProperty ;
+                rdfs:label "partOfGenre"@en; 
+                rdfs:domain c9e:VideoGame;
+                rdfs:range c9e:Genre . 
+#  --------------------------- Property 5------------------------- 
+c9s:hasAgeLimit rdf:type owl:ObjectProperty ;
+                rdfs:label "hasAgeLimit"@en; 
+                rdfs:domain c9e:VideoGame;
+                rdfs:range c9e:Age_restriction . 
+#  --------------------------- Property 6------------------------- 
+c9s:hasModes rdf:type owl:ObjectProperty ;
+             rdfs:label "hasModes"@en; 
+             rdfs:domain c9e:VideoGame;
+             rdfs:range c9e:Game_Modes . 
+#  --------------------------- Property 7------------------------- 
+:language rdf:type owl:DatatypeProperty ;
+          rdfs:label "isEnglish"@en; 
+          rdfs:domain c9e:VideoGame;
+          rdfs:range xsd:boolean . 
+#  --------------------------- Property 8------------------------- 
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:label "name"@en; 
+      rdfs:domain c9e:VideoGame;
+      rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+c9s:hasMultiplayer rdf:type owl:DatatypeProperty ;
+                   rdfs:label "hasMultiplayer"@en; 
+                   rdfs:domain c9e:Game_Modes;
+                   rdfs:range xsd:boolean . 
+#  --------------------------- Property 10------------------------- 
+c9s:+18 rdf:type owl:DatatypeProperty ;
+        rdfs:label "+18"@en; 
+        rdfs:domain c9e:Age_restriction;
+        rdfs:range xsd:boolean . 
+#  --------------------------- Property 11------------------------- 
+c9s:isSubGenre rdf:type owl:ObjectProperty ;
+               rdfs:label "isSubGenre"@en; 
+               rdfs:domain c9e:Genre;
+               rdfs:range c9e:Genre . 
+#  --------------------------- Property 12------------------------- 
+c9s:publishedBy rdf:type owl:ObjectProperty ;
+                rdfs:label "publishedBy"@en; 
+                rdfs:domain c9e:VideoGame;
+                rdfs:range c9e:Publisher . 
+#  --------------------------- Property 13------------------------- 
+c9s:genreIncludes rdf:type owl:ObjectProperty ;
+                  rdfs:label "genreIncludes"@en; 
+                  rdfs:domain c9e:Genre;
+                  rdfs:range c9e:VideoGame . 
+#  --------------------------- Property 14------------------------- 
+c9s:hasOnlinePlay rdf:type owl:DatatypeProperty ;
+                  rdfs:label "hasOnlinePlay"@en; 
+                  rdfs:domain c9e:Game_Modes;
+                  rdfs:range xsd:boolean . 
+#  --------------------------- Property 15------------------------- 
+c9s:inspiredBy rdf:type owl:ObjectProperty ;
+               rdfs:label "inspiredBy"@en; 
+               rdfs:domain c9e:VideoGame;
+               rdfs:range c9e:Inspiration . 
+#  --------------------------- Property 16------------------------- 
+c9s:Book rdf:type owl:DatatypeProperty ;
+         rdfs:label "fromABook"@en; 
+         rdfs:domain c9e:Inspiration;
+         rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 17------------------------- 
+c9s:fromATVSeries rdf:type owl:DatatypeProperty ;
+                  rdfs:label "fromATVSeries"@en; 
+                  rdfs:domain c9e:Inspiration;
+                  rdfs:range xsd:boolean . 
+#  --------------------------- Property 18------------------------- 
+c9s:fromAMovie rdf:type owl:DatatypeProperty ;
+               rdfs:label "fromAMovie"@en; 
+               rdfs:domain c9e:Inspiration;
+               rdfs:range xsd:boolean . 
+#  --------------------------- Property 19------------------------- 
+c9s:historicalEvent rdf:type owl:DatatypeProperty ;
+                    rdfs:label "historicalEvent"@en; 
+                    rdfs:domain c9e:Inspiration;
+                    rdfs:range xsd:boolean . 
+#  --------------------------- Property 20------------------------- 
+:releaseDate rdf:type owl:DatatypeProperty ;
+             rdfs:label "releaseDate"@en; 
+             rdfs:domain c9e:VideoGame;
+             rdfs:range rdfs:Literal . 
+###  Class Definitions (Number of Classes) 27 ###
+#  --------------------------- Class  0------------------------- 
+c9e:VideoGame rdf:type owl:Class; 
+              rdfs:label "VideoGame"@en . 
+#  --------------------------- Class  1------------------------- 
+c9e:Series rdf:type owl:Class; 
+           rdfs:label "Series"@en . 
+#  --------------------------- Class  2------------------------- 
+c9e:Rating rdf:type owl:Class; 
+           rdfs:label "Rating"@en . 
+#  --------------------------- Class  3------------------------- 
+c9e:Console rdf:type owl:Class; 
+            rdfs:label "Console"@en . 
+#  --------------------------- Class  4------------------------- 
+c9e:SurvivalGa,e rdf:type owl:Class; 
+                 rdfs:subClassOf c9e:VideoGame ;
+                 rdfs:label "SurvivalGame"@en . 
+#  --------------------------- Class  5------------------------- 
+c9e:HorrorGame rdf:type owl:Class; 
+               rdfs:subClassOf c9e:VideoGame ;
+               rdfs:label "HorrorGame"@en . 
+#  --------------------------- Class  6------------------------- 
+c9e:SportsGame rdf:type owl:Class; 
+               rdfs:subClassOf c9e:VideoGame ;
+               rdfs:label "SportsGame"@en . 
+#  --------------------------- Class  7------------------------- 
+c9e:ShooterGame rdf:type owl:Class; 
+                rdfs:subClassOf c9e:VideoGame ;
+                rdfs:label "ShooterGame"@en . 
+#  --------------------------- Class  8------------------------- 
+c9e:Genre rdf:type owl:Class; 
+          rdfs:label "Genre"@en . 
+#  --------------------------- Class  9------------------------- 
+c9e:Logic rdf:type owl:Class; 
+          rdfs:subClassOf c9e:Genre ;
+          rdfs:label "LogicGenre"@en . 
+#  --------------------------- Class  10------------------------- 
+c9e:Simulator rdf:type owl:Class; 
+              rdfs:subClassOf c9e:Genre ;
+              rdfs:label "SimulatorGenre"@en . 
+#  --------------------------- Class  11------------------------- 
+c9e:RPG rdf:type owl:Class; 
+        rdfs:subClassOf c9e:Genre ;
+        rdfs:label "RPG"@en . 
+#  --------------------------- Class  12------------------------- 
+c9e:Adventure rdf:type owl:Class; 
+              rdfs:subClassOf c9e:Genre ;
+              rdfs:label "AdventureGenre"@en . 
+#  --------------------------- Class  13------------------------- 
+c9e:Sports rdf:type owl:Class; 
+           rdfs:subClassOf c9e:Genre ;
+           rdfs:label "SportsGenre"@en . 
+#  --------------------------- Class  14------------------------- 
+c9e:Survival rdf:type owl:Class; 
+             rdfs:subClassOf c9e:Genre ;
+             rdfs:label "SurvivalGenre"@en . 
+#  --------------------------- Class  15------------------------- 
+c9e:Action rdf:type owl:Class; 
+           rdfs:subClassOf c9e:Genre ;
+           rdfs:label "ActionGenre"@en . 
+#  --------------------------- Class  16------------------------- 
+c9e:Age_restriction rdf:type owl:Class; 
+                    rdfs:label "Age restriction"@en . 
+#  --------------------------- Class  17------------------------- 
+c9e:Game_Modes rdf:type owl:Class; 
+               rdfs:label "Game Modes"@en . 
+#  --------------------------- Class  18------------------------- 
+c9e:+18_Genre rdf:type owl:Class; 
+              rdfs:subClassOf c9e:Genre ;
+              rdfs:label "+18 Genre"@en . 
+#  --------------------------- Class  19------------------------- 
+c9e:HorroGenre rdf:type owl:Class; 
+               rdfs:subClassOf c9e:+18_Genre ;
+               rdfs:label "HorroGenre"@en . 
+#  --------------------------- Class  20------------------------- 
+c9e:ViolentGenre rdf:type owl:Class; 
+                 rdfs:subClassOf c9e:+18_Genre ;
+                 rdfs:label "ViolentGenre"@en . 
+#  --------------------------- Class  21------------------------- 
+c9e:Publisher rdf:type owl:Class; 
+              rdfs:label "Publisher"@en . 
+#  --------------------------- Class  22------------------------- 
+c9e:PC rdf:type owl:Class; 
+       rdfs:subClassOf c9e:Console ;
+       rdfs:label "PC"@en . 
+#  --------------------------- Class  23------------------------- 
+c9e:Nintendo rdf:type owl:Class; 
+             rdfs:subClassOf c9e:Console ;
+             rdfs:label "Nintendo"@en . 
+#  --------------------------- Class  24------------------------- 
+c9e:Xbox rdf:type owl:Class; 
+         rdfs:subClassOf c9e:Console ;
+         rdfs:label "Xbox"@en . 
+#  --------------------------- Class  25------------------------- 
+c9e:PlayStation rdf:type owl:Class; 
+                rdfs:subClassOf c9e:Console ;
+                rdfs:label "PlayStation"@en . 
+#  --------------------------- Class  26------------------------- 
+c9e:Inspiration rdf:type owl:Class; 
+                rdfs:label "Inspiration"@en . 
