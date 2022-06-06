@@ -1,0 +1,49 @@
+
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix wd: 		<http://www.wikidata.org/entity/> .
+@prefix c9s: 		<http://cloudnine.sw/schema#> .
+@prefix c9e: 		<http://cloudnine.sw/entity/> .
+@prefix c9pvoc:		<http://visualdataweb.org/PlayerVocab> .
+@base 			<http://visualdataweb.org/PlayerVocab> .
+
+c9s:hasUsername rdf:Property c9e:Player .
+c9s:hasName rdf:Property c9e:Player .
+c9s:hasGender rdf:Property c9e:Player .
+c9s:hasAge rdf:Property c9e:Player .
+c9s:hasPlayed rdf:Property c9e:Player .
+c9s:hasLiked rdf:Property c9e:Player .
+c9s:playersPlatforms rdf:Property c9e:Player .
+c9s:enjoysModes rdf:Property c9e:Player .
+c9s:livesIn rdf:Property c9e:Player .
+c9s:hasLanguage rdf:Property c9e:Player .
+
+c9s:hasUsername rdfs:domain c9e:Player ;
+			rdfs:range c9e:Username.
+c9s:hasName rdfs:domain c9e:Player ;
+			rdfs:range c9e:Name.
+c9s:hasGender rdfs:domain c9e:Player ;
+			rdfs:range c9e:Gender.
+c9s:hasAge rdfs:domain c9e:Player ;
+			rdfs:range c9e:Age.
+c9s:hasPlayed rdfs:domain c9e:Player ;
+			rdfs:range c9e:Play History.
+c9s:hasLiked rdfs:domain c9e:Player ;
+			rdfs:range c9e:Favourite Games.
+c9s:usesPlatforms rdfs:domain c9e:Player ;
+			rdfs:range c9e:Platform.
+c9s:enjoysModes rdfs:domain c9e:Player ;
+			rdfs:range c9e:Player Modes.
+c9s:livesIn rdfs:domain c9e:Player ;
+			rdfs:range c9e:Location.
+c9s:hasLanguage rdfs:domain c9e:Player ;
+			rdfs:range c9e:Language.
+
+
