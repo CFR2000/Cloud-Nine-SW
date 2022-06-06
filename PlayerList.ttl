@@ -1,0 +1,34 @@
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix wd: 		<http://www.wikidata.org/entity/> .
+@prefix c9s: 		<http://cloudnine.sw/schema#> .
+@prefix c9e: 		<http://cloudnine.sw/entity/> .
+@prefix c9pvoc:		<http://visualdataweb.org/PlayerVocab> .
+@base 			<http://visualdataweb.org/PlayerVocab> .
+
+
+
+c9e:colm a c9e:Player.
+c9e:colm c9s:hasUsername "colm"@en.
+
+c9e:jorge a c9e:Player.
+c9e:jorge c9s:hasUsername "jorge"@en.
+
+c9e:soklong a c9e:Player.
+c9e:soklong c9s:hasUsername "soklong"@en.
+
+c9e:mike a c9e:Player.
+c9e:mike c9s:hasUsername "mike"@en.
+
+c9e:carl a c9e:Player.
+c9e:carl c9s:hasUsername "carl"@en.
+
+
+
