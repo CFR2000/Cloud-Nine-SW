@@ -2,7 +2,6 @@
 ###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
 #################################################################
 
-@prefix : 		<http://visualdataweb.org/PlayerVocabulary> .
 @prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: 		<http://www.w3.org/2002/07/owl#> .
@@ -10,7 +9,6 @@
 @prefix dc: 		<http://purl.org/dc/elements/1.1/> .
 @prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
 @prefix gurs: 		<http://sw-game-user-recommender/schema#> .
-@prefix : 		<http://visualdataweb.org/PlayerVocabulary> .
 @prefix gure: 		<http://sw-game-user-recommender/entity/> .
 @prefix c9e: 		<http://cloudnine.sw/entity/> .
 @prefix wot: 		<http://xmlns.com/wot/0.1/> .
